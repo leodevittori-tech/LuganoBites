@@ -66,6 +66,1209 @@ const places=[
 ['Ristorante Moncucchetto','Gourmet','Via M. Crivelli Torricelli 27, Lugano',4,4.8,6]
 ].map(([name,type,address,price,rating,pic],id)=>({id,name,type,address,price,rating,pic}));
 const additions=[["Locanda Orico", "Gourmet", "Via Orico 13, 6500 Bellinzona", "Bellinzona", "https://www.locandaorico.ch/", 6], ["Grotto Bundi", "Ticinese", "Via alle Cantine 24, 6850 Mendrisio", "Mendrisio", "https://www.grottobundi.com/it/", 7], ["Locanda Barbarossa", "Gourmet", "Ascona, Ticino, Svizzera", "Ascona", "https://www.ticino.ch/commons/details/77091.html", 4], ["Osteria Enoteca Cuntitt", "Gourmet", "Castel San Pietro, Ticino, Svizzera", "Castel San Pietro", "https://www.ticino.ch/commons/details/77091.html", 3], ["Osteria dell’Enoteca", "Gourmet", "Losone, Ticino, Svizzera", "Losone", "https://www.ticino.ch/commons/details/77091.html", 5], ["La Brezza", "Gourmet", "Ascona, Ticino, Svizzera", "Ascona", "https://www.ticino.ch/commons/details/77091.html", 6], ["Ecco", "Gourmet", "Ascona, Ticino, Svizzera", "Ascona", "https://www.ticino.ch/commons/details/77091.html", 10], ["Osteria del Centro", "Gourmet", "Comano, Ticino, Svizzera", "Comano", "https://www.ticino.ch/commons/details/77091.html", 2], ["Grotto Eguaglianza", "Ticinese", "Capolago, Mendrisio, Ticino, Svizzera", "Capolago", "https://www.ticino.ch/it/travel-inspirations/grotti.html", 7], ["Grotto San Michele", "Ticinese", "Salita al Castelgrande, 6500 Bellinzona, Ticino", "Bellinzona", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 0], ["Ristorante Castelgrande", "Ristorante", "Salita al Castelgrande, 6500 Bellinzona, Ticino", "Bellinzona", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 1], ["Osteria Sasso Corbaro", "Ristorante", "Castello di Sasso Corbaro, 6500 Bellinzona, Ticino", "Bellinzona", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 2], ["Ristorante Locanda Marco", "Ristorante", "Via Nocca 20, 6500 Bellinzona, Ticino", "Bellinzona", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 3], ["Grotto Petronilla", "Ticinese", "Via ai Grotti 36a, 6710 Biasca, Ticino", "Biasca", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 4], ["Grotto del Mulo", "Ticinese", "via ai Grotti 38, 6710 Biasca, Ticino", "Biasca", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 5], ["Al Giardinetto", "Ristorante", "Via A. Pini 21, 6710 Biasca, Ticino", "Biasca", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 6], ["Ristorante Forni", "Ristorante", "Via della Stazione 19, 6780 Airolo, Ticino", "Airolo", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 7], ["Ristorante Des Alpes", "Ristorante", "Via della Stazione 35, 6780 Airolo, Ticino", "Airolo", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 8], ["Ristorante All'Acqua", "Ristorante", "Strada della Novena, 6781 Bedretto, Ticino", "Bedretto", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 9], ["Grotto dei due ponti", "Ticinese", "Via ai Pontini 11, 6745 Giornico, Ticino", "Giornico", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 10], ["Grotto Pergola", "Ticinese", "Via Cribiago 2, 6745 Giornico, Ticino", "Giornico", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 11], ["Poli Bistro", "Ristorante", "Via Oltera 12, 6718 Olivone, Ticino", "Olivone", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 0], ["Campra Il Ritrovo", "Ristorante", "Campra 1, 6718 Olivone, Ticino", "Olivone", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 1], ["Grotto Adula", "Ticinese", "6717 Dangio, Ticino", "Dangio", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 2], ["Grotto Baldoria", "Ticinese", "Via Omobono 9, 6612 Ascona, Ticino", "Ascona", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 3], ["Osteria Nostrana", "Ristorante", "Lungolago Motta, 6612 Ascona, Ticino", "Ascona", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 4], ["Antico Ristorante Borromeo", "Ristorante", "via Collegio 16, 6612 Ascona, Ticino", "Ascona", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 5], ["Grottino Ticinese Losone", "Ticinese", "Via San Materno 10, 6616 Losone, Ticino", "Losone", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 6], ["Grotto Broggini", "Ticinese", "via S. Materno 18, 6616 Losone, Ticino", "Losone", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 7], ["Ristorante Sensi", "Ristorante", "Viale Verbano 9, 6600 Locarno, Ticino", "Locarno", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 8], ["Ristorante Fiorentina", "Ristorante", "Via Sant'Antonio 10, 6600 Locarno, Ticino", "Locarno", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 9], ["Ristorante Da Valentino", "Ristorante", "Via Torretta 7, 6600 Locarno, Ticino", "Locarno", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 10], ["Locanda Locarnese", "Ristorante", "Via Bossi 1, 6600 Locarno, Ticino", "Locarno", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 11], ["Grotto Borei", "Ticinese", "Via Ghiridone, 6614 Brissago, Ticino", "Brissago", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 0], ["Corippo Osteria", "Ristorante", "Bassa Corippo 23, 6631 Corippo, Ticino", "Corippo", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 1], ["Grotto Pozzasc", "Ticinese", "Via al fiume 1, 6695 Peccia, Ticino", "Peccia", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 2], ["Locanda Fior di Campo", "Ristorante", "Stradómm 75, 6684 Campo Vallemaggia, Ticino", "Campo Vallemaggia", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 3], ["Ristorante Antica Osteria Dazio", "Ristorante", "Nucleo, 6696 Fusio, Ticino", "Fusio", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 4], ["Hotel Ristorante Walser", "Ristorante", "Nucleo, 6685 Bosco Gurin, Ticino", "Bosco Gurin", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 5], ["Crotto dei Tigli", "Ticinese", "Viale Attilio Tarchini 53, 6828 Balerna, Ticino", "Balerna", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 6], ["Grotto Loverciano", "Ticinese", "Via ai Grotti 5, 6874 Castel San Pietro, Ticino", "Castel San Pietro", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 7], ["Antico Grotto Fossati", "Ticinese", "Antico Grotto Fossati, 6866 Meride, Ticino", "Meride", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 8], ["Antico Grotto Ticino", "Ticinese", "Via alle Cantine 20, 6850 Mendrisio, Ticino", "Mendrisio", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 9], ["Grotto San Martino", "Ticinese", "Viale alle Cantine 30, 6850 Mendrisio, Ticino", "Mendrisio", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 10], ["Conca Bella", "Ristorante", "Via Concabella 2, 6833 Vacallo, Ticino", "Vacallo", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 11], ["Ul Furmighin", "Ristorante", "Piazza Garuff, 6839 Sagno, Ticino", "Sagno", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 0], ["Osteria Santa Margherita", "Ristorante", "Via Santa Margherita 31, 6855 Stabio, Ticino", "Stabio", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 1], ["Locanda San Silvestro", "Ristorante", "Via Bernardo Peyer 20, 6866 Meride, Ticino", "Meride", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 2], ["Ristorante Fiore di pietra", "Ristorante", "Vetta Monte Generoso (Via Lüera 1), 6825 Capolago, Ticino", "Capolago", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 3], ["Ristorante AnaCapri", "Ristorante", "Via Clemente Maraini, 6900 Lugano, Ticino", "Lugano", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 4], ["Canvetto Luganese", "Ristorante", "Via R.Simen 14b, 6900 Lugano, Ticino", "Lugano", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 5], ["Ristorante Caffè Olimpia", "Ristorante", "Piazza Riforma 1, 6900 Lugano, Ticino", "Lugano", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 6], ["RISTORANTE GABBANI", "Ristorante", "Piazza Cioccaro 1, 6900 Lugano, Ticino", "Lugano", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 7], ["Locanda del Conventino", "Ristorante", "Strada di Pregassona 44, 6963 Pregassona, Ticino", "Pregassona", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 8], ["Ristorante Vicania", "Ristorante", "Sentée dal Alp, 6921 Vico Morcote, Ticino", "Vico Morcote", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 9], ["Ristorante della Torre", "Ristorante", "Riveta da la Tor, 6922 Morcote, Ticino", "Morcote", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 10], ["Grotto Ticinese", "Ticinese", "Via ai Grotti 2, 6944 Cureglia, Ticino", "Cureglia", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 11], ["Grotto Sgambada", "Ticinese", "6939 Arosio, Ticino", "Arosio", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 0], ["Grotto Reina", "Ticinese", "Contrada S.Marco, 6982 Agno, Ticino", "Agno", "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html", 1]];
+// 150 nuovi locali: elenco ufficiale Ticino Turismo, consultato il 19 settembre 2026.
+additions.push(...[
+  [
+    "Resort Collina d'Oro",
+    "Ristorante",
+    "Resort Collina d'Oro, via Roncone 22, 6927 Agra, Ticino",
+    "Agra",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    0
+  ],
+  [
+    "La Stüa",
+    "Ristorante",
+    "Airolo-Pesciüm, 6780 Airolo, Ticino",
+    "Airolo",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    1
+  ],
+  [
+    "Osteria Anzonico",
+    "Ristorante",
+    "Via al Portic 6, 6748 Anzonico, Ticino",
+    "Anzonico",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    2
+  ],
+  [
+    "Enoteca La Cambusa",
+    "Ristorante",
+    "Contrada Fontanelle 3, 6612 Ascona, Ticino",
+    "Ascona",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    3
+  ],
+  [
+    "Locanda Villa d'Epoca",
+    "Ristorante",
+    "La Cantonál 38, 6677 Aurigeno, Ticino",
+    "Aurigeno",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    4
+  ],
+  [
+    "Antico Grotto Mai Morire",
+    "Ticinese",
+    "Via Vallemaggia 62, 6670 Avegno, Ticino",
+    "Avegno",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    5
+  ],
+  [
+    "Grotto Sant'Antonio",
+    "Ticinese",
+    "Viale A. Tarchini 26, 6828 Balerna, Ticino",
+    "Balerna",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    6
+  ],
+  [
+    "La Selvatica",
+    "Ristorante",
+    "Via Maria Boschetti Alberti 9, 6981 Banco, Ticino",
+    "Banco",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    7
+  ],
+  [
+    "Il Fermento - Birrificio Urbano - Bellinzona",
+    "Ristorante",
+    "Via Codeborgo 12, 6500 Bellinzona, Ticino",
+    "Bellinzona",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    8
+  ],
+  [
+    "Grotto Al Morign",
+    "Ticinese",
+    "Val Pontirone, 6710 Biasca, Ticino",
+    "Biasca",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    9
+  ],
+  [
+    "All'Arco - Hotel Campione",
+    "Ristorante",
+    "Via Campione, 6816 Bissone, Ticino",
+    "Bissone",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    10
+  ],
+  [
+    "Osteria Il Baracchino",
+    "Ristorante",
+    "Strada Cantonale, 6951 Bogno, Ticino",
+    "Bogno",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    11
+  ],
+  [
+    "Grotto Tamè",
+    "Ticinese",
+    "Via Crespera 68, 6932 Breganzona, Ticino",
+    "Breganzona",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    0
+  ],
+  [
+    "Ai Piee",
+    "Ristorante",
+    "Via Cantonale, 6634 Brione Verzasca, Ticino",
+    "Brione Verzasca",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    1
+  ],
+  [
+    "Grotto Ca' Nostra",
+    "Ticinese",
+    "Via Orselina 77, 6645 Brione sopra Minusio, Ticino",
+    "Brione sopra Minusio",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    2
+  ],
+  [
+    "Osteria Boato",
+    "Ristorante",
+    "Viale Lungolago, 6614 Brissago, Ticino",
+    "Brissago",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    3
+  ],
+  [
+    "Nuova Osteria Brontallo",
+    "Ristorante",
+    "Nucleo, 6692 Brontallo, Ticino",
+    "Brontallo",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    4
+  ],
+  [
+    "Grotto Alpe di Brusino",
+    "Ticinese",
+    "Serpiano, 6827 Brusino Arsizio, Ticino",
+    "Brusino Arsizio",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    5
+  ],
+  [
+    "Ristorante panoramico Vetta, Monte Brè",
+    "Ristorante",
+    "Via alla Vetta 40, 6979 Brè sopra Lugano, Ticino",
+    "Brè sopra Lugano",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    6
+  ],
+  [
+    "Osteria Manciana con Alloggio",
+    "Ristorante",
+    "Via Cantonale 95, 6838 Cabbio, Ticino",
+    "Cabbio",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    7
+  ],
+  [
+    "Ristorante Radici Gourmet",
+    "Ristorante",
+    "Via Kurhaus 12, 6936 Cademario, Ticino",
+    "Cademario",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    8
+  ],
+  [
+    "Grotto all'Elvezia",
+    "Ticinese",
+    "Via Serta 2, 6814 Cadempino, Ticino",
+    "Cadempino",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    9
+  ],
+  [
+    "Grotto Ponte Vecchio",
+    "Ticinese",
+    "San Bartulumee 4, 6528 Camorino, Ticino",
+    "Camorino",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    10
+  ],
+  [
+    "Grotto Ratti",
+    "Ticinese",
+    "via Sonvico 17, 6952 Canobbio, Ticino",
+    "Canobbio",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    11
+  ],
+  [
+    "Buffet Bellavista - Monte Generoso",
+    "Ristorante",
+    "Via Lüera 1, 6825 Capolago, Ticino",
+    "Capolago",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    0
+  ],
+  [
+    "Ristorante La Sosta",
+    "Ristorante",
+    "Via Principale 55, 6914 Carona, Ticino",
+    "Carona",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    1
+  ],
+  [
+    "Grotto Crivelli",
+    "Ticinese",
+    "Via Torrazza 35, 6987 Caslano, Ticino",
+    "Caslano",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    2
+  ],
+  [
+    "Ristorante Firenze",
+    "Ristorante",
+    "Strada di Gandria 1, 6976 Castagnola, Ticino",
+    "Castagnola",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    3
+  ],
+  [
+    "Ristorante Basodino",
+    "Ristorante",
+    "Cantonale, 6690 Cavergno, Ticino",
+    "Cavergno",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    4
+  ],
+  [
+    "Osteria Centrale",
+    "Ristorante",
+    "Corte di Sotto, 6683 Cerentino, Ticino",
+    "Cerentino",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    5
+  ],
+  [
+    "Castello Osteria",
+    "Ristorante",
+    "Via Strada Vecchia 10, 6675 Cevio, Ticino",
+    "Cevio",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    6
+  ],
+  [
+    "Ristoranti Gabbiano e Zigolini Mövenpick Touring",
+    "Ristorante",
+    "Piazza Indipendenza 1, 6830 Chiasso, Ticino",
+    "Chiasso",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    7
+  ],
+  [
+    "Osteria Grotto ul Ciurlin",
+    "Ticinese",
+    "Gribbio, 6747 Chironico, Ticino",
+    "Chironico",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    8
+  ],
+  [
+    "Antica Osteria del Carlin",
+    "Ristorante",
+    "In Piazza da Dun 2, 6702 Claro, Ticino",
+    "Claro",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    9
+  ],
+  [
+    "Grotto Lafranchi",
+    "Ticinese",
+    "Via al Talee 8, 6678 Coglio, Ticino",
+    "Coglio",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    10
+  ],
+  [
+    "Osteria Ronchetto",
+    "Ristorante",
+    "Via Nasora 25, 6949 Comano, Ticino",
+    "Comano",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    11
+  ],
+  [
+    "Osteria Al Palazign",
+    "Ristorante",
+    "Via Cantonale, 6661 Comologno, Ticino",
+    "Comologno",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    0
+  ],
+  [
+    "Osteria Bisnona",
+    "Ristorante",
+    "Via Cantonale 42, 6594 Contone, Ticino",
+    "Contone",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    1
+  ],
+  [
+    "Hotel Ristorante San Bernardo",
+    "Ristorante",
+    "Via Contra 725, 6646 Contra, Ticino",
+    "Contra",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    2
+  ],
+  [
+    "Osteria Belvedere",
+    "Ristorante",
+    "Strada da lèlp 5, 6760 Faido, Ticino",
+    "Faido",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    3
+  ],
+  [
+    "Albergo Ristorante Villa Pineta",
+    "Ristorante",
+    "Via Schiadüü 1, 6696 Fusio, Ticino",
+    "Fusio",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    4
+  ],
+  [
+    "Grotto Teresa",
+    "Ticinese",
+    "Alle Cantine, 6978 Gandria, Ticino",
+    "Gandria",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    5
+  ],
+  [
+    "Cantinetta Balmelli 1912",
+    "Ristorante",
+    "Via S. Abbondio 31, 6925 Gentilino, Ticino",
+    "Gentilino",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    6
+  ],
+  [
+    "Ristorante Froda",
+    "Ristorante",
+    "Froda 4, 6635 Gerra Verzasca, Ticino",
+    "Gerra Verzasca",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    7
+  ],
+  [
+    "Grotto Pescatori",
+    "Ticinese",
+    "Via San Gottardo 75, 6745 Giornico, Ticino",
+    "Giornico",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    8
+  ],
+  [
+    "Ristorante del Moro",
+    "Ristorante",
+    "Piazza Grande 67, 6512 Giubiasco, Ticino",
+    "Giubiasco",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    9
+  ],
+  [
+    "Ristorante Locanda Lessy",
+    "Ristorante",
+    "Via San Giovan 5, 6525 Gnosca, Ticino",
+    "Gnosca",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    10
+  ],
+  [
+    "TCS Ristorante & Pizzeria Bella Riva",
+    "Ristorante",
+    "Via al Campecc 4, 6672 Gordevio, Ticino",
+    "Gordevio",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    11
+  ],
+  [
+    "Abasto Osteria Rioplatense",
+    "Ristorante",
+    "Via Gordemo 42, 6596 Gordola, Ticino",
+    "Gordola",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    0
+  ],
+  [
+    "Ristorante Antichi Sapori",
+    "Ristorante",
+    "Ai Chiossi, 6518 Gorduno, Ticino",
+    "Gorduno",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    1
+  ],
+  [
+    "Osteria del Reno",
+    "Ristorante",
+    "Via Grumo 24, 6929 Gravesano, Ticino",
+    "Gravesano",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    2
+  ],
+  [
+    "Grottino Costa",
+    "Ticinese",
+    "Costa sopra Intragna, 6655 Intragna, Ticino",
+    "Intragna",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    3
+  ],
+  [
+    "Osteria Da Giacinto - Grotto Angela",
+    "Ticinese",
+    "Via ai Grotti 10, 6707 Iragna, Ticino",
+    "Iragna",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    4
+  ],
+  [
+    "Ristorante Serta",
+    "Ristorante",
+    "Via Serta 6, 6814 Lamone, Ticino",
+    "Lamone",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    5
+  ],
+  [
+    "Hotel Ristorante Defanti",
+    "Ristorante",
+    "Via Petronilla 81, 6746 Lavorgo, Ticino",
+    "Lavorgo",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    6
+  ],
+  [
+    "Ristorante La Pernice Cancorì",
+    "Ristorante",
+    "Cancorì-Nara, 6716 Leontica, Ticino",
+    "Leontica",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    7
+  ],
+  [
+    "Osteria Sascola",
+    "Ristorante",
+    "Via Cantonale 3, 6682 Linescio, Ticino",
+    "Linescio",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    8
+  ],
+  [
+    "Ristorante Farfalla",
+    "Ristorante",
+    "C/o Tertianum Residenza al Lido, Via della Posta 44, 6600 Locarno, Ticino",
+    "Locarno",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    9
+  ],
+  [
+    "Osteria Losone da Alex",
+    "Ristorante",
+    "Via Mezzana 8, 6616 Losone, Ticino",
+    "Losone",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    10
+  ],
+  [
+    "Ristorante Tre Vie",
+    "Ristorante",
+    "Via Lucomagno 6, 6721 Ludiano, Ticino",
+    "Ludiano",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    11
+  ],
+  [
+    "Autentiko",
+    "Ristorante",
+    "Riva Giocondo Albertolli 5, 6900 Lugano, Ticino",
+    "Lugano",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    0
+  ],
+  [
+    "Grotto Bassa",
+    "Ticinese",
+    "Via Bassa di Fuori 1, 6533 Lumino, Ticino",
+    "Lumino",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    1
+  ],
+  [
+    "Grotto La Baita",
+    "Ticinese",
+    "Via Orgnana 75b, 6573 Magadino, Ticino",
+    "Magadino",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    2
+  ],
+  [
+    "Osteria del Gin",
+    "Ristorante",
+    "Caraa dal Gign 10, 6673 Maggia, Ticino",
+    "Maggia",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    3
+  ],
+  [
+    "Ristoro Sass Malt",
+    "Ristorante",
+    "Casella postale 299, 6713 Malvaglia, Ticino",
+    "Malvaglia",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    4
+  ],
+  [
+    "Ristorante Piazzetta",
+    "Ristorante",
+    "Via Violino 11, 6928 Manno, Ticino",
+    "Manno",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    5
+  ],
+  [
+    "Osteria Rusticanella",
+    "Ristorante",
+    "Vicolo Zota 2, 6818 Melano, Ticino",
+    "Melano",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    6
+  ],
+  [
+    "Chalet Suisse fondue, raclette & swiss specialties c/o Foxtown",
+    "Ristorante",
+    "Via Angelo Maspoli 18, 6850 Mendrisio, Ticino",
+    "Mendrisio",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    7
+  ],
+  [
+    "Osteria La Guana",
+    "Ristorante",
+    "Via Ala Caraa 8, 6866 Meride, Ticino",
+    "Meride",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    8
+  ],
+  [
+    "Agriturismo La Stala",
+    "Ristorante",
+    "Via Cantonale 2, 6805 Mezzovico, Ticino",
+    "Mezzovico",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    9
+  ],
+  [
+    "Ristorante Lema 1624",
+    "Ristorante",
+    "Via Monte Lema 2, 6986 Miglieglia, Ticino",
+    "Miglieglia",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    10
+  ],
+  [
+    "Centrale - Minusio",
+    "Ristorante",
+    "Via San Gottardo 58, 6648 Minusio, Ticino",
+    "Minusio",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    11
+  ],
+  [
+    "Tabla – Ristorante indiano & Lounge",
+    "Ristorante",
+    "Via ai Canvetti 15, 6926 Montagnola, Ticino",
+    "Montagnola",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    0
+  ],
+  [
+    "Ristorante Ostello Curzútt",
+    "Ristorante",
+    "Curzútt, 6513 Monte Carasso, Ticino",
+    "Monte Carasso",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    1
+  ],
+  [
+    "Grotto Collina",
+    "Ticinese",
+    "via termine 6, 6998 Monteggio, Ticino",
+    "Monteggio",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    2
+  ],
+  [
+    "Ristorante con enoteca Origini @Mulino del Ghitello",
+    "Ristorante",
+    "Via Ghitello 3, 6834 Morbio Inferiore, Ticino",
+    "Morbio Inferiore",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    3
+  ],
+  [
+    "Ristorante Lattecaldo",
+    "Ristorante",
+    "Via Lattecaldo 1, 6835 Morbio Superiore, Ticino",
+    "Morbio Superiore",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    4
+  ],
+  [
+    "Grotto Cacciatori",
+    "Ticinese",
+    "Via Cantonale, Crana, 6611 Mosogno, Ticino",
+    "Mosogno",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    5
+  ],
+  [
+    "La Baia",
+    "Ristorante",
+    "Viale Verbano 25, 6600 Muralto, Ticino",
+    "Muralto",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    6
+  ],
+  [
+    "Grotto Bivio",
+    "Ticinese",
+    "Via Cantonale, 6986 Novaggio, Ticino",
+    "Novaggio",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    7
+  ],
+  [
+    "Ristorante - Centro Pro Natura Lucomagno",
+    "Ristorante",
+    "Strada del Lucomagno, 6718 Olivone, Ticino",
+    "Olivone",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    8
+  ],
+  [
+    "Grotto Pozzon",
+    "Ticinese",
+    "Via la Réssiga 9, 6703 Osogna, Ticino",
+    "Osogna",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    9
+  ],
+  [
+    "Ristorante La Serra",
+    "Ristorante",
+    "Via Pian Scairolo 12, 6915 Pambio-Noranco, Ticino",
+    "Pambio-Noranco",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    10
+  ],
+  [
+    "Grotto San Salvatore",
+    "Ticinese",
+    "Via Minudra 1, 6912 Pazzallo, Ticino",
+    "Pazzallo",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    11
+  ],
+  [
+    "Grotto al Cort",
+    "Ticinese",
+    "San Antonio, 6695 Peccia, Ticino",
+    "Peccia",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    0
+  ],
+  [
+    "Osteria Caffè Lüis",
+    "Ristorante",
+    "Via Campora 1, 6832 Pedrinate, Ticino",
+    "Pedrinate",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    1
+  ],
+  [
+    "Ristorante B&B Gambarogno",
+    "Ristorante",
+    "Via delle Camelie 20, 6579 Piazzogna, Ticino",
+    "Piazzogna",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    2
+  ],
+  [
+    "Locanda TCS",
+    "Ristorante",
+    "Via Piora 5 Scruengo, 6776 Piotta, Ticino",
+    "Piotta",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    3
+  ],
+  [
+    "Bottega del Gusto",
+    "Ristorante",
+    "Via Cantonale 66, 6613 Porto Ronco, Ticino",
+    "Porto Ronco",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    4
+  ],
+  [
+    "Grotto Dei Cacciatori",
+    "Ticinese",
+    "Via Cantonale 53, 6948 Porza, Ticino",
+    "Porza",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    5
+  ],
+  [
+    "Hostaria La Meridiana",
+    "Ristorante",
+    "Via alle Fontane 4, 6963 Pregassona, Ticino",
+    "Pregassona",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    6
+  ],
+  [
+    "Ristoro Taneda",
+    "Ristorante",
+    "Val Piora - Cadagno, 6776 Quinto, Ticino",
+    "Quinto",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    7
+  ],
+  [
+    "Ristorante Mezzaluna",
+    "Ristorante",
+    "Via Nosette 21, 6595 Riazzino, Ticino",
+    "Riazzino",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    8
+  ],
+  [
+    "Ristorante Caffè Sociale",
+    "Ristorante",
+    "Via Indipendenza 7, 6826 Riva San Vitale, Ticino",
+    "Riva San Vitale",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    9
+  ],
+  [
+    "Grotto Leoni",
+    "Ticinese",
+    "Via Soresina 45, 6802 Rivera, Ticino",
+    "Rivera",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    10
+  ],
+  [
+    "Robiei Albergo Ristorante",
+    "Ristorante",
+    "Funivia San Carlo Robiei, 6690 Robiei, Ticino",
+    "Robiei",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    11
+  ],
+  [
+    "Ristorante al Braciere",
+    "Ristorante",
+    "Via Livurcio 50, 6622 Ronco sopra Ascona, Ticino",
+    "Ronco sopra Ascona",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    0
+  ],
+  [
+    "Osteria Grotto Conza",
+    "Ticinese",
+    "Via alla Madonna 23, 6821 Rovio, Ticino",
+    "Rovio",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    1
+  ],
+  [
+    "Ristorante Hotel La Perla",
+    "Ristorante",
+    "Via Cantonale 39, 6592 S. Antonino, Ticino",
+    "S. Antonino",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    2
+  ],
+  [
+    "Osteria Ritrovo dei Passeggeri",
+    "Ristorante",
+    "Vellano, 6583 S. Antonio, Ticino",
+    "S. Antonio",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    3
+  ],
+  [
+    "Eremo San Nicolao",
+    "Ristorante",
+    "Via San Nicolao 7, 6872 Salorino, Ticino",
+    "Salorino",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    4
+  ],
+  [
+    "Ristorante Montalbano by Mirko Rainer",
+    "Ristorante",
+    "via Montalbano 48, 6854 San Pietro, Ticino",
+    "San Pietro",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    5
+  ],
+  [
+    "Hotel Ristorante Cereda",
+    "Ristorante",
+    "Via Locarno 10, 6514 Sementina, Ticino",
+    "Sementina",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    6
+  ],
+  [
+    "Grotto Canvett",
+    "Ticinese",
+    "Cà d’Varénzin 6, 6714 Semione, Ticino",
+    "Semione",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    7
+  ],
+  [
+    "Locanda della Pace",
+    "Ristorante",
+    "Via Cantonale 7, 6997 Sessa, Ticino",
+    "Sessa",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    8
+  ],
+  [
+    "Ciossa Restaurant & Lounge",
+    "Ristorante",
+    "Via Ciossa 5, 6806 Sigirino, Ticino",
+    "Sigirino",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    9
+  ],
+  [
+    "Ristorante Tre Terre",
+    "Ristorante",
+    "Via Vecchia Stazione 2, 6652 Tegna, Ticino",
+    "Tegna",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    10
+  ],
+  [
+    "Ristorante Pizzeria Tamaro",
+    "Ristorante",
+    "Via Mappo 32, 6598 Tenero, Ticino",
+    "Tenero",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    11
+  ],
+  [
+    "Ristorante Stazione Tesserete",
+    "Ristorante",
+    "Via Pietro Fontana 12, 6950 Tesserete, Ticino",
+    "Tesserete",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    0
+  ],
+  [
+    "La Griglia",
+    "Ristorante",
+    "via Cantonale, 6807 Torricella, Ticino",
+    "Torricella",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    1
+  ],
+  [
+    "Grotto Grassi",
+    "Ticinese",
+    "Vicolo ai Grotti 6, 6865 Tremona, Ticino",
+    "Tremona",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    2
+  ],
+  [
+    "Bettola Montana da \"Rosy\"",
+    "Ristorante",
+    "Frassonedo, 6653 Verscio, Ticino",
+    "Verscio",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    3
+  ],
+  [
+    "Ristorante La Sorgente",
+    "Ristorante",
+    "Portic da Süra 18, 6921 Vico Morcote, Ticino",
+    "Vico Morcote",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    4
+  ],
+  [
+    "Ristorante Piccolo Vigneto",
+    "Ristorante",
+    "Via al Roccolo 19, 6962 Viganello, Ticino",
+    "Viganello",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    5
+  ],
+  [
+    "Riva Beach Club - Restaurant - Boutique Hotel",
+    "Ristorante",
+    "Via Cantonale 86, 6574 Vira Gambarogno, Ticino",
+    "Vira Gambarogno",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    6
+  ],
+  [
+    "Osteria Paradiso",
+    "Ristorante",
+    "Berzona, 6632 Vogorno, Ticino",
+    "Vogorno",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    7
+  ],
+  [
+    "Ristorante Steak House Airö",
+    "Ristorante",
+    "Via poncione di vespero 36, 6780 Airolo, Ticino",
+    "Airolo",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    8
+  ],
+  [
+    "Tre Stagioni",
+    "Ristorante",
+    "Via Muraccio 142, 6612 Ascona, Ticino",
+    "Ascona",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    9
+  ],
+  [
+    "Ristorante Stazione Avegno",
+    "Ristorante",
+    "Stradón 18, 6670 Avegno, Ticino",
+    "Avegno",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    10
+  ],
+  [
+    "Confiserie & Café Al Porto Bellinzona",
+    "Ristorante",
+    "Via Ludovico il Moro 1 / Piazza Stazione, 6500 Bellinzona, Ticino",
+    "Bellinzona",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    11
+  ],
+  [
+    "La Palma",
+    "Ristorante",
+    "Via Cantonale / Piazza Borromini, 6816 Bissone, Ticino",
+    "Bissone",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    0
+  ],
+  [
+    "Grotto al Ritrovo dai Fusetti",
+    "Ticinese",
+    "Via Val Resa 110, 6645 Brione sopra Minusio, Ticino",
+    "Brione sopra Minusio",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    1
+  ],
+  [
+    "Ristorante Gabietta",
+    "Ristorante",
+    "via Gabbietta 6, 6614 Brissago, Ticino",
+    "Brissago",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    2
+  ],
+  [
+    "Chalet San Giorgio",
+    "Ristorante",
+    "Via San Giorgio 24, 6827 Brusino Arsizio, Ticino",
+    "Brusino Arsizio",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    3
+  ],
+  [
+    "Canvetto Federale",
+    "Ristorante",
+    "Via Circonvallazione 1, 6952 Canobbio, Ticino",
+    "Canobbio",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    4
+  ],
+  [
+    "Albergo Ristorante Svizzero",
+    "Ristorante",
+    "Via Carlo Scacchi 13, 6825 Capolago, Ticino",
+    "Capolago",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    5
+  ],
+  [
+    "Ristorante Posta",
+    "Ristorante",
+    "Via Principale 35, 6914 Carona, Ticino",
+    "Carona",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    6
+  ],
+  [
+    "Grotto Franci",
+    "Ticinese",
+    "via ai grotti 17, 6675 Cevio, Ticino",
+    "Cevio",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    7
+  ],
+  [
+    "Senza punti",
+    "Ristorante",
+    "via Contra 440, 6646 Contra, Ticino",
+    "Contra",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    8
+  ],
+  [
+    "Ristorante Pensione Carì",
+    "Ristorante",
+    "Croce, 6760 Faido, Ticino",
+    "Faido",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    9
+  ],
+  [
+    "Grotto Descanso",
+    "Ticinese",
+    "Cantine di Gandria, 6978 Gandria, Ticino",
+    "Gandria",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    10
+  ],
+  [
+    "Grotto al Bosco",
+    "Ticinese",
+    "Via ai Grotti 4, 6925 Gentilino, Ticino",
+    "Gentilino",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    11
+  ],
+  [
+    "Grotto Rodai",
+    "Ticinese",
+    "Via ai Grotti 25, 6745 Giornico, Ticino",
+    "Giornico",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    0
+  ],
+  [
+    "Albergo Ristorante San Giobbe",
+    "Ristorante",
+    "Via San Giobbe 6a, 6512 Giubiasco, Ticino",
+    "Giubiasco",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    1
+  ],
+  [
+    "Grotto Cà Rossa  da Marzio",
+    "Ticinese",
+    "Via Vallemaggia 138, 6672 Gordevio, Ticino",
+    "Gordevio",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    2
+  ],
+  [
+    "Grotto Ila",
+    "Ticinese",
+    "Ai Sirt, 6518 Gorduno, Ticino",
+    "Gorduno",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    3
+  ],
+  [
+    "Grotto Maggini",
+    "Ticinese",
+    "Via al Valaa 8, 6655 Intragna, Ticino",
+    "Intragna",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    4
+  ],
+  [
+    "Osteria BarLume",
+    "Ristorante",
+    "Piazzetta dei Riformati 3, 6600 Locarno, Ticino",
+    "Locarno",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    5
+  ],
+  [
+    "The Mira View Restaurant & Terrace",
+    "Ristorante",
+    "Via alle Gerre 5, 6616 Losone, Ticino",
+    "Losone",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    6
+  ],
+  [
+    "Grotto Milani",
+    "Ticinese",
+    "Cà di Bel 2, 6721 Ludiano, Ticino",
+    "Ludiano",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    7
+  ],
+  [
+    "The Trinity -  Irish Pub",
+    "Ristorante",
+    "Via Luigi Canonica 19, 6900 Lugano, Ticino",
+    "Lugano",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    8
+  ],
+  [
+    "Ristoro Alpino Furbeda",
+    "Ristorante",
+    "Dandrio, 6713 Malvaglia, Ticino",
+    "Malvaglia",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    9
+  ],
+  [
+    "Grotto dell'Ortiga",
+    "Ticinese",
+    "Strada Regina 35, 6928 Manno, Ticino",
+    "Manno",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    10
+  ],
+  [
+    "Osteria Vignetta",
+    "Ristorante",
+    "Via A. Turconi 36, 6850 Mendrisio, Ticino",
+    "Mendrisio",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    11
+  ],
+  [
+    "Ristorante Pizzeria Del Ponte",
+    "Ristorante",
+    "Via San Gottardo 86, 6648 Minusio, Ticino",
+    "Minusio",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    0
+  ],
+  [
+    "Ristorante Bellinzona Sud",
+    "Ristorante",
+    "Autostrada A2 (direzione San Gottardo), 6513 Monte Carasso, Ticino",
+    "Monte Carasso",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    1
+  ],
+  [
+    "Trattoria del Lago",
+    "Ristorante",
+    "Viale Verbano 35, 6600 Muralto, Ticino",
+    "Muralto",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    2
+  ],
+  [
+    "Ristorante Pizzeria Belcantone",
+    "Ristorante",
+    "Piazza F. Ferrer 10, 6986 Novaggio, Ticino",
+    "Novaggio",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    3
+  ],
+  [
+    "Vecchia Osteria Seseglio",
+    "Ristorante",
+    "Via Campora 11, 6832 Pedrinate, Ticino",
+    "Pedrinate",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    4
+  ],
+  [
+    "Rifugio Ristorante Lago Ritom",
+    "Ristorante",
+    "Val Piora, 6776 Piotta, Ticino",
+    "Piotta",
+    "https://www.ticino.ch/it/explore/gastronomy/restaurants/restaurants-list.html",
+    5
+  ]
+]);
 for(const item of additions){const [name,type,address,city,source,pic]=item;places.push({id:places.length,name,type,address,city,source,pic,price:null,rating:null})}
 for(const p of places) if(!p.city) p.city='Lugano';
 const $=id=>document.getElementById(id);let filter='Tutti',busy=false,current=null;const pause=ms=>new Promise(resolve=>setTimeout(resolve,ms));
